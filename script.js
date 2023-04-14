@@ -1,40 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>News Aggregator</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <h1>News Aggregator</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="#" data-source="bbc-news">BBC News</a></li>
-                <li><a href="#" data-source="cnn">CNN</a></li>
-                <li><a href="#" data-source="techcrunch">TechCrunch</a></li>
-            </ul>
-        </nav>
-        <main>
-            <section id="top-stories">
-                <h2>Top Stories</h2>
-                <div id="top-stories-content"></div>
-            </section>
-            <section id="business">
-                <h2>Business News</h2>
-                <div id="business-content"></div>
-            </section>
-            <section id="technology">
-                <h2>Technology News</h2>
-                <div id="technology-content"></div>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2023 News Aggregator</p>
-        </footer>
-        <script src="script.js">
-            const apiKey = 'c07f52bab6714a5fba95c5ac9d9616bb';
+const apiKey = 'c07f52bab6714a5fba95c5ac9d9616bb';
 
 // Function to fetch articles from a news source and display them on the page
 function fetchArticles(source, category) {
@@ -95,7 +59,3 @@ sourceLinks.forEach(link => {
 fetchArticles('bbc-news', 'general');
 fetchArticles('bbc-news', 'business');
 fetchArticles('bbc-news', 'technology');
-
-        </script>
-    </body>
-</html>
